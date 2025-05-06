@@ -172,3 +172,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+#my custom files to ignore
+backup_data
+tsr_*
