@@ -177,3 +177,4 @@ cython_debug/
 #my custom files to ignore
 backup_data
 tsr_*
+*.html
