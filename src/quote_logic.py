@@ -26,7 +26,7 @@ def df_formating(html_string_io):
     return df
 
 def df_from_html(html_quote):
-    html_string = BeautifulSoup(html_quote, 'html')
+    html_string = BeautifulSoup(html_quote, 'lxml')
 
     prod_name = html_string.select('div.skuDetails span.global_gray_bold')[0].text
 
@@ -96,5 +96,7 @@ if __name__ == '__main__':
     quote_common_items = drop_merge_column(quote_common_items)
 
     print(quote_1_unique)
+    print('\n')
     print(quote_2_unique)
+    print('\n')
     print(quote_common_items)
